@@ -14106,14 +14106,14 @@
         const he = document.querySelector(".custom-generator__avatar canvas"),
             de = document.querySelectorAll(".choices__item"), pe = document.querySelectorAll(".btn_download"),
             ge = document.querySelector(".btn_random"), ye = 1024, me = 1024,
-            ve = ["/assets/parts/background/common/Bg 4.png", "/assets/parts/background/rare/Bg 1.png", "/assets/parts/background/rare/Bg 2.png", "/assets/parts/background/rare/Bg 3.png","/assets/parts/background/common/2.png","/assets/parts/background/common/5.png","/assets/parts/background/common/6.png","/assets/parts/background/common/7.png","/assets/parts/background/common/2.png",],
-            we = ["#", "/assets/parts/clothes/common/Bip.png", "/assets/parts/clothes/common/Cape.png", "/assets/parts/clothes/common/Icy sweater.png", "/assets/parts/clothes/common/Naruto jacket.png", "/assets/parts/clothes/common/Ponco.png", "/assets/parts/clothes/common/Shirt.png"],
-            be = ["/assets/parts/body/common/Original.png","/assets/parts/body/common/1.png","/assets/parts/body/common/2.png","/assets/parts/body/common/3.png","/assets/parts/body/common/4.png"],
-            xe = ["/assets/parts/eyes/common/Original.png", "/assets/parts/eyes/common/Big eyes.png", "/assets/parts/eyes/common/Sus.png", "/assets/parts/eyes/common/Weird.png", "/assets/parts/eyes/common/Xx.png", "/assets/parts/eyes/rare/Pixel.png", "/assets/parts/eyes/rare/1.png", "/assets/parts/eyes/rare/2.png", "/assets/parts/eyes/rare/3.png", "/assets/parts/eyes/rare/4.png","/assets/parts/eyes/rare/5.png", "/assets/parts/eyes/rare/6.png"],
-            ke = ["#", "/assets/parts/head/common/Cap.png", "/assets/parts/head/common/Headband.png", "/assets/parts/head/common/Mafia.png", "/assets/parts/head/rare/Afro.png", "/assets/parts/head/rare/Arrow.png", "/assets/parts/head/rare/Egg.png", "/assets/parts/head/rare/Goggles.png", "/assets/parts/head/rare/Russian hat.png"],
+            ve = ["/assets/parts/background/rare/2.png", "/assets/parts/background/rare/5.png", "/assets/parts/background/rare/6.png", "/assets/parts/background/rare/Bg 5.png", "/assets/parts/background/rare/Bg 4.png", "/assets/parts/background/rare/Bg 1.png", "/assets/parts/background/rare/Bg 2.png", "/assets/parts/background/rare/Bg 3.png"],
+            we = ["#", "/assets/parts/clothes/common/Bip.png", "/assets/parts/clothes/common/Cape.png", "/assets/parts/clothes/common/Icy sweater.png", "/assets/parts/clothes/common/Ponco.png", "/assets/parts/clothes/common/Shirt.png"],
+            be = ["/assets/parts/body/common/Original.png", "/assets/parts/body/common/1.png", "/assets/parts/body/common/2.png", "/assets/parts/body/common/3.png", "/assets/parts/body/common/4.png"],
+            xe = ["/assets/parts/eyes/common/Original.png", "/assets/parts/eyes/common/Big eyes.png", "/assets/parts/eyes/common/Sus.png", "/assets/parts/eyes/common/Weird.png", "/assets/parts/eyes/common/Xx.png", "/assets/parts/eyes/rare/Pixel.png", "/assets/parts/eyes/rare/1.png", "/assets/parts/eyes/rare/2.png", "/assets/parts/eyes/rare/3.png", "/assets/parts/eyes/rare/4.png", "/assets/parts/eyes/rare/5.png", "/assets/parts/eyes/rare/6.png"],
+            ke = ["#", "/assets/parts/head/common/Cap.png", "/assets/parts/head/common/Headband.png", "/assets/parts/head/common/Mafia.png", "/assets/parts/head/rare/Afro.png", "/assets/parts/head/rare/Arrow.png", "/assets/parts/head/rare/Egg.png", "/assets/parts/head/rare/Goggles.png", "/assets/parts/head/rare/Russian hat.png", "/assets/parts/head/super rare/Horns.png", "/assets/parts/head/super rare/Mohawk.png","/assets/parts/head/super rare/1.png","/assets/parts/head/super rare/2.png","/assets/parts/head/super rare/3.png","/assets/parts/head/super rare/4.png","/assets/parts/head/super rare/5.png","/assets/parts/head/super rare/6.png","/assets/parts/head/super rare/7.png","/assets/parts/head/super rare/8.png"],
             Ee = ["/assets/parts/mouth/common/Original.png", "/assets/parts/mouth/common/Rabbit teeth.png", "/assets/parts/mouth/common/Tounge.png", "/assets/parts/mouth/rare/Drool.png", "/assets/parts/mouth/rare/Fangs.png", "/assets/parts/mouth/rare/Jaws.png", "/assets/parts/mouth/rare/Smoke.png", "/assets/parts/mouth/super rare/Gold.png"],
             Ae = {
-                background: "/assets/parts/background/common/Bg 4.png",
+                background: "/assets/parts/background/rare/Bg 4.png",
                 body: "/assets/parts/body/common/Original.png",
                 clothes: "#",
                 eyes: "/assets/parts/eyes/common/Original.png",
@@ -14126,7 +14126,7 @@
                 let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ye,
                     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : me;
                 t.clearRect(0, 0, e, n)
-            }(t), await Ie(t, e.background),await Ie(t, e.clothes), await Ie(t, e.body),  await Ie(t, e.eyes), await Ie(t, e.head), await Ie(t, e.mouth), t.canvas.parentElement.classList.remove("_loading"), !0
+            }(t), await Ie(t, e.background), await Ie(t, e.clothes), await Ie(t, e.body), await Ie(t, e.eyes), await Ie(t, e.head), await Ie(t, e.mouth), t.canvas.parentElement.classList.remove("_loading"), !0
         }
 
         function Ie(t, e) {
@@ -14153,39 +14153,110 @@
         }
 
         window.onload = async () => {
-            const t = he.getContext("2d");
-            await Se(t, Ae), ge && ge.addEventListener("click", (e => {
-                e.preventDefault(), e.stopPropagation(), function (t) {
-                    const e = Be(ve), n = Be(be), r = Be(we), i = Be(xe), o = Be(ke), a = Be(Ee);
-                    Ae.background = e, Ae.body = n, Ae.clothes = r, Ae.eyes = i, Ae.head = o, Ae.mouth = a, document.querySelectorAll(".choices__choice").forEach((t => t.classList.remove("selected"))), document.querySelector(`[data-value="${e}"]`).classList.add("selected"), document.querySelector(`[data-value="${n}"]`).classList.add("selected"), document.querySelector(`[data-value="${r}"]`).classList.add("selected"), document.querySelector(`[data-value="${i}"]`).classList.add("selected"), document.querySelector(`[data-value="${o}"]`).classList.add("selected"), document.querySelector(`[data-value="${a}"]`).classList.add("selected"), Se(t, Ae)
-                }(t)
-            })),
-                de.forEach((e => {
-                    const n = e.getAttribute("data-part");
-                    if (!n) return;
-                    const r = e.querySelectorAll("button.choices__choice");
-                    r.forEach((e => {
-                        const i = e.querySelector("img")?.getAttribute("src");
-                        if (!i) return;
-                        e.addEventListener("click", (a => {
-                            a.preventDefault();
-                            a.stopPropagation();
-                            // Directly update selection and display the overlay
-                            r.forEach((t => t.classList.remove("selected")));
-                            e.classList.add("selected");
-                            Ae[n] = i;
-                            Se(t, Ae);
-                            $(".choices__overlay").fadeIn(300);
-                            $(".choices__overlay p").html("You can use the generator now.");
-                        }));
-                    }));
-                })),
-                pe.forEach((t => t.addEventListener("click", (t => {
-                t.preventDefault(), t.stopPropagation(), function () {
-                    const t = he.toDataURL(), e = document.createElement("a");
-                    e.href = t, e.download = "avatar.jpeg", document.body.appendChild(e), e.click(), document.body.removeChild(e)
-                }()
-            })))), $(".choices__value").owlCarousel({margin: 10, loop: !1, autoWidth: !0, dots: !1, nav: !0})
+            // Get the canvas context
+            const t = he?.getContext("2d");
+            if (!t) {
+                console.error("Canvas context is null or undefined");
+                return;
+            }
+
+            await Se(t, Ae);
+
+            // Add click event listener to 'ge' if it exists
+            if (ge) {
+                ge.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    updateSelection(t);
+                });
+            } else {
+                console.warn("'ge' is null or undefined");
+            }
+
+            // Iterate through 'de' elements
+            de.forEach((e) => {
+                const n = e.getAttribute("data-part");
+                if (!n) return;
+                const r = e.querySelectorAll("button.choices__choice");
+                r.forEach((e) => {
+                    const i = e.querySelector("img")?.getAttribute("src");
+                    if (!i) return;
+                    e.addEventListener("click", (a) => {
+                        a.preventDefault();
+                        a.stopPropagation();
+                        // Directly update selection and display the overlay
+                        r.forEach((t) => t.classList.remove("selected"));
+                        e.classList.add("selected");
+                        Ae[n] = i;
+                        Se(t, Ae);
+                        $(".choices__overlay").fadeIn(300);
+                        $(".choices__overlay p").html("You can use the generator now.");
+                    });
+                });
+            });
+
+            // Add click event listener to 'pe' elements
+            pe.forEach((t) => t.addEventListener("click", (t) => {
+                t.preventDefault();
+                t.stopPropagation();
+                saveAvatar();
+            }));
+
+            // Initialize the owlCarousel if the element exists
+            if ($(".choices__value").length) {
+                $(".choices__value").owlCarousel({
+                    margin: 10,
+                    loop: false,
+                    autoWidth: true,
+                    dots: false,
+                    nav: true
+                });
+            } else {
+                console.warn("'.choices__value' element is not found");
+            }
+        };
+
+        function updateSelection(t) {
+            const e = Be(ve),
+                n = Be(be),
+                r = Be(we),
+                i = Be(xe),
+                o = Be(ke),
+                a = Be(Ee);
+
+            if (!e || !n || !r || !i || !o || !a) {
+                console.error("One or more values are null or undefined in 'updateSelection'");
+                return;
+            }
+
+            Ae.background = e;
+            Ae.body = n;
+            Ae.clothes = r;
+            Ae.eyes = i;
+            Ae.head = o;
+            Ae.mouth = a;
+
+            document.querySelectorAll(".choices__choice").forEach((t) => t.classList.remove("selected"));
+
+            document.querySelector(`[data-value="${e}"]`)?.classList.add("selected");
+            document.querySelector(`[data-value="${n}"]`)?.classList.add("selected");
+            document.querySelector(`[data-value="${r}"]`)?.classList.add("selected");
+            document.querySelector(`[data-value="${i}"]`)?.classList.add("selected");
+            document.querySelector(`[data-value="${o}"]`)?.classList.add("selected");
+            document.querySelector(`[data-value="${a}"]`)?.classList.add("selected");
+
+            Se(t, Ae);
         }
+
+        function saveAvatar() {
+            const t = he.toDataURL(),
+                e = document.createElement("a");
+            e.href = t;
+            e.download = "avatar.jpeg";
+            document.body.appendChild(e);
+            e.click();
+            document.body.removeChild(e);
+        }
+
     })()
 })();

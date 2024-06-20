@@ -2690,8 +2690,7 @@ footer {
 }
 
 .choices__item_mouth .choices__choice {
-    background: url(/assets/parts/eyes/common/Original.png) 0 0/cover !important
-    no-repeat !important !important !important, url(/assets/parts/body/common/Original.png) 0 0 / cover !important no-repeat !important !important !important
+    background: url(/assets/parts/eyes/common/Original.png) 0 0/cover no-repeat , url(/assets/parts/body/common/Original.png) 0 0 / cover no-repeat
 }
 
 .choices__item_need-full-base .choices__choice {
